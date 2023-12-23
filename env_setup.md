@@ -23,6 +23,10 @@ sudo bash
 head -n 1 /usr/bin/katoolin
 sudo apt-get install python2
 sudo sed -i '1s|#!/usr/bin/python|#!/usr/bin/python2|' /usr/bin/katoolin
+# or
+sudo sed -i '1s|#!/usr/bin/python|#!/usr/bin/python' /usr/bin/katoolin
+
+
 
 # 執行 Katoolin
 sudo katoolin
