@@ -1,5 +1,8 @@
 
 ```bash
+sudo apt-get update
+
+
 # 安裝 Miniconda
 mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
@@ -9,8 +12,11 @@ rm -rf ~/miniconda3/miniconda.sh
 
 # 安裝 Katoolin
 sudo apt-get install git
-sudo git clone https://github.com/LionSec/katoolin.git && cp katoolin/katoolin.py /usr/bin/katoolin
+sudo git clone https://github.com/LionSec/katoolin.git
+sudo cp katoolin/katoolin.py /usr/bin/katoolin
 sudo chmod +x /usr/bin/katoolin
+sudo rm -rf ~/katoolin
+
 
 # 更改 shebang 以使用 Python 2
 sudo bash
